@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.65">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 10.2px 0.0px; font: 13.0px 獅尾四季春JP}
+    p.p2 {margin: 0.0px 0.0px 10.2px 0.0px; font: 13.0px 獅尾四季春JP; min-height: 16.0px}
+  </style>
+</head>
+<body>
+<p class="p1"><b>&lt;!DOCTYPE html&gt;</b></p>
+<p class="p1"><b>&lt;html lang="zh-TW"&gt;</b></p>
+<p class="p1"><b>&lt;head&gt;</b></p>
+<p class="p1"><b>&lt;meta charset="UTF-8"&gt;</b></p>
+<p class="p1"><b>&lt;title&gt;印刷店報價系統&lt;/title&gt;</b></p>
+<p class="p1"><b>&lt;style&gt;</b></p>
+<p class="p1"><b>body {</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>font-family: -apple-system, BlinkMacSystemFont;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>margin: 0;</b></p>
+<p class="p1"><b>}</b></p>
+<p class="p1"><b>.container {</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>display: grid;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>grid-template-columns: 1.2fr 1fr 1fr;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>height: 100vh;</b></p>
+<p class="p1"><b>}</b></p>
+<p class="p1"><b>section {</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>padding: 20px;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>overflow-y: auto;</b></p>
+<p class="p1"><b>}</b></p>
+<p class="p1"><b>h2 { margin-top: 0; }</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>label {</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>display: block;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>margin-top: 12px;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>font-size: 18px;</b></p>
+<p class="p1"><b>}</b></p>
+<p class="p1"><b>select, input, button {</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>width: 100%;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>padding: 12px;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>font-size: 18px;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>margin-top: 6px;</b></p>
+<p class="p1"><b>}</b></p>
+<p class="p1"><b>button {</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>margin-top: 20px;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>background: #007aff;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>color: white;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>border: none;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>border-radius: 8px;</b></p>
+<p class="p1"><b>}</b></p>
+<p class="p1"><b>table {</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>width: 100%;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>border-collapse: collapse;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>margin-top: 10px;</b></p>
+<p class="p1"><b>}</b></p>
+<p class="p1"><b>td, th {</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>border: 1px solid #ccc;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>padding: 6px;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>text-align: center;</b></p>
+<p class="p1"><b>}</b></p>
+<p class="p1"><b>.result {</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>font-size: 20px;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>background: #f2f2f2;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>padding: 16px;</b></p>
+<p class="p1"><b>}</b></p>
+<p class="p1"><b>.total {</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>font-size: 32px;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>color: #d40000;</b></p>
+<p class="p1"><b>}</b></p>
+<p class="p1"><b>&lt;/style&gt;</b></p>
+<p class="p1"><b>&lt;/head&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;body&gt;</b></p>
+<p class="p1"><b>&lt;div class="container"&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;section&gt;</b></p>
+<p class="p1"><b>&lt;h2&gt;報價輸入&lt;/h2&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;label&gt;價格類別&lt;/label&gt;</b></p>
+<p class="p1"><b>&lt;select id="priceType"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="1"&gt;門市&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="0.95"&gt;公司&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="0.9"&gt;會員&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="0.85"&gt;同行&lt;/option&gt;</b></p>
+<p class="p1"><b>&lt;/select&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;label&gt;印製份數&lt;/label&gt;</b></p>
+<p class="p1"><b>&lt;input type="number" id="copies" value="1"&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;label&gt;頁數&lt;/label&gt;</b></p>
+<p class="p1"><b>&lt;input type="number" id="pages" value="1"&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;label&gt;成品尺寸（mm）&lt;/label&gt;</b></p>
+<p class="p1"><b>&lt;div style="display:flex; gap:8px; align-items:center;"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;input type="number" id="sizeW" placeholder="寬"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;span&gt;×&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;input type="number" id="sizeH" placeholder="高"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;span&gt;mm&lt;/span&gt;</b></p>
+<p class="p1"><b>&lt;/div&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;label&gt;印刷&lt;/label&gt;</b></p>
+<p class="p1"><b>&lt;select id="printType"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="color_single"&gt;彩色單面&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="color_double"&gt;彩色雙面&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="bw_single"&gt;黑白單面&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="bw_double"&gt;黑白雙面&lt;/option&gt;</b></p>
+<p class="p1"><b>&lt;/select&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;label&gt;紙材&lt;/label&gt;</b></p>
+<p class="p1"><b>&lt;select id="paperType"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="coated"&gt;銅版紙&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="woodfree"&gt;道林紙&lt;/option&gt;</b></p>
+<p class="p1"><b>&lt;/select&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;label&gt;紙張磅數&lt;/label&gt;</b></p>
+<p class="p1"><b>&lt;select id="paperWeight"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="80"&gt;80 磅&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="100"&gt;100 磅&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="120"&gt;120 磅&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="150"&gt;150 磅&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="200"&gt;200 磅&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="250"&gt;250 磅&lt;/option&gt;</b></p>
+<p class="p1"><b>&lt;/select&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;label&gt;裝訂&lt;/label&gt;</b></p>
+<p class="p1"><b>&lt;select id="bindingType"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="perfect"&gt;膠裝&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="saddle"&gt;騎馬釘&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="none"&gt;無&lt;/option&gt;</b></p>
+<p class="p1"><b>&lt;/select&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;label&gt;後加工&lt;/label&gt;</b></p>
+<p class="p1"><b>&lt;select id="processType"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="none"&gt;無&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="laminate"&gt;護貝&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;option value="cut"&gt;裁切&lt;/option&gt;</b></p>
+<p class="p1"><b>&lt;/select&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;button onclick="calculate()"&gt;計算金額&lt;/button&gt;</b></p>
+<p class="p1"><b>&lt;/section&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;section&gt;</b></p>
+<p class="p1"><b>&lt;h2&gt;價格參照表（可直接修改）&lt;/h2&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;h3&gt;印刷（每頁）&lt;/h3&gt;</b></p>
+<p class="p1"><b>&lt;table&gt;</b></p>
+<p class="p1"><b>&lt;tr&gt;&lt;th&gt;項目&lt;/th&gt;&lt;th&gt;價格&lt;/th&gt;&lt;/tr&gt;</b></p>
+<p class="p1"><b>&lt;tr&gt;&lt;td&gt;彩色單面&lt;/td&gt;&lt;td&gt;&lt;input id="color_single" value="5"&gt;&lt;/td&gt;&lt;/tr&gt;</b></p>
+<p class="p1"><b>&lt;tr&gt;&lt;td&gt;彩色雙面&lt;/td&gt;&lt;td&gt;&lt;input id="color_double" value="8"&gt;&lt;/td&gt;&lt;/tr&gt;</b></p>
+<p class="p1"><b>&lt;tr&gt;&lt;td&gt;黑白單面&lt;/td&gt;&lt;td&gt;&lt;input id="bw_single" value="1"&gt;&lt;/td&gt;&lt;/tr&gt;</b></p>
+<p class="p1"><b>&lt;tr&gt;&lt;td&gt;黑白雙面&lt;/td&gt;&lt;td&gt;&lt;input id="bw_double" value="2"&gt;&lt;/td&gt;&lt;/tr&gt;</b></p>
+<p class="p1"><b>&lt;/table&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;h3&gt;紙材（每張）&lt;/h3&gt;</b></p>
+<p class="p1"><b>&lt;table&gt;</b></p>
+<p class="p1"><b>&lt;tr&gt;&lt;td&gt;銅版紙&lt;/td&gt;&lt;td&gt;&lt;input id="coated" value="2"&gt;&lt;/td&gt;&lt;/tr&gt;</b></p>
+<p class="p1"><b>&lt;tr&gt;&lt;td&gt;道林紙&lt;/td&gt;&lt;td&gt;&lt;input id="woodfree" value="1.5"&gt;&lt;/td&gt;&lt;/tr&gt;</b></p>
+<p class="p1"><b>&lt;/table&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;h3&gt;裝訂（每本）&lt;/h3&gt;</b></p>
+<p class="p1"><b>&lt;table&gt;</b></p>
+<p class="p1"><b>&lt;tr&gt;&lt;td&gt;膠裝&lt;/td&gt;&lt;td&gt;&lt;input id="perfect" value="10"&gt;&lt;/td&gt;&lt;/tr&gt;</b></p>
+<p class="p1"><b>&lt;tr&gt;&lt;td&gt;騎馬釘&lt;/td&gt;&lt;td&gt;&lt;input id="saddle" value="5"&gt;&lt;/td&gt;&lt;/tr&gt;</b></p>
+<p class="p1"><b>&lt;tr&gt;&lt;td&gt;無&lt;/td&gt;&lt;td&gt;&lt;input id="none" value="0"&gt;&lt;/td&gt;&lt;/tr&gt;</b></p>
+<p class="p1"><b>&lt;/table&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;h3&gt;後加工（每本）&lt;/h3&gt;</b></p>
+<p class="p1"><b>&lt;table&gt;</b></p>
+<p class="p1"><b>&lt;tr&gt;&lt;td&gt;護貝&lt;/td&gt;&lt;td&gt;&lt;input id="laminate" value="3"&gt;&lt;/td&gt;&lt;/tr&gt;</b></p>
+<p class="p1"><b>&lt;tr&gt;&lt;td&gt;裁切&lt;/td&gt;&lt;td&gt;&lt;input id="cut" value="5"&gt;&lt;/td&gt;&lt;/tr&gt;</b></p>
+<p class="p1"><b>&lt;/table&gt;</b></p>
+<p class="p1"><b>&lt;/section&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;section&gt;</b></p>
+<p class="p1"><b>&lt;h2&gt;計算結果&lt;/h2&gt;</b></p>
+<p class="p1"><b>&lt;div class="result" id="result"&gt;尚未計算&lt;/div&gt;</b></p>
+<p class="p1"><b>&lt;/section&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;/div&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;script&gt;</b></p>
+<p class="p1"><b>function calculate() {</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>const copies = +copiesEl.value;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>const pages = +pagesEl.value;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>const priceType = +priceTypeEl.value;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>const printPrice = +document.getElementById(printType.value).value;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>const paperPrice = +document.getElementById(paperType.value).value;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>const bindingPrice = +document.getElementById(bindingType.value).value;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>const processPrice = +document.getElementById(processType.value).value;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>const printingFee = printPrice * pages * copies;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>const paperFee = paperPrice * pages * copies;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>const bindingFee = bindingPrice * copies;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>const processFee = processPrice * copies;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>const subtotal = (printingFee + paperFee + bindingFee + processFee) * priceType;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>const total = subtotal * 1.05;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>result.innerHTML = `</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>成品尺寸：${sizeW.value || "-"} × ${sizeH.value || "-"} mm&lt;br&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>紙張：${paperType.options[paperType.selectedIndex].text} ${paperWeight.value} 磅&lt;hr&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>印刷費用：${printingFee}&lt;br&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>紙張費用：${paperFee}&lt;br&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>裝訂費用：${bindingFee}&lt;br&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>後加工費用：${processFee}&lt;hr&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>（以上小計 × 價格類別）× 1.05&lt;br&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;div class="total"&gt;含稅後金額：${Math.round(total)}&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>`;</b></p>
+<p class="p1"><b>}</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>const copiesEl = document.getElementById("copies");</b></p>
+<p class="p1"><b>const pagesEl = document.getElementById("pages");</b></p>
+<p class="p1"><b>const priceTypeEl = document.getElementById("priceType");</b></p>
+<p class="p1"><b>const printType = document.getElementById("printType");</b></p>
+<p class="p1"><b>const paperType = document.getElementById("paperType");</b></p>
+<p class="p1"><b>const paperWeight = document.getElementById("paperWeight");</b></p>
+<p class="p1"><b>const bindingType = document.getElementById("bindingType");</b></p>
+<p class="p1"><b>const processType = document.getElementById("processType");</b></p>
+<p class="p1"><b>const sizeW = document.getElementById("sizeW");</b></p>
+<p class="p1"><b>const sizeH = document.getElementById("sizeH");</b></p>
+<p class="p1"><b>const result = document.getElementById("result");</b></p>
+<p class="p1"><b>&lt;/script&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;/body&gt;</b></p>
+<p class="p1"><b>&lt;/html&gt;</b></p>
+</body>
+</html>
